@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<h1 id="h">welcome to javascript</h1>
+<p>javascript is a programming language used to create dynamic content for websites. it is a lightweigjht,creoss-platforms,and single-threaded programming language.javascript is an interpreted
+language that executes code line by line providing more flexibility.
+HTML adds structure to awebpage,CSS stles it and jacascript brings it to life by allowing users to interact with elements on the page, such as actions on clicking buttons,filling out forms,
+and showing animations.
+javascript on the client side is directly executed in the users browser.almost all browser have javascript interpreter and do not need to install any software.there is also a browser console
+where you can test your javascript code
+javascript is also used on the server side(on web server) to access database, file handling and security features to send response,to browsers.</p>
+<br>
+change your webpage background to:
+<button onclick="changeback('lightblue')">blue</button> 
+<button onclick="changeback('lightgreen')">green</button>
+<button onclick="changeback('lightpink')">pink</button>
+<br>
+<br>
+change your heading background to:
+<button onclick="changehead('red')">red</button>
+<button onclick="changehead('blue')">blue</button>
+<button onclick="changehead('green')">green</button> 
+<script>
+function changeback(color)
+{
+document.body.style.background=color;
+}
+function changehead(color)
+{
+var c=document.getElementById("h");
+c.style.background=color;
+}
+</script>
+</body>
+</html>
